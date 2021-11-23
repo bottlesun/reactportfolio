@@ -4,8 +4,8 @@ const MenuItem = ({menu,onMenu}) => {
     const {category,name} = menu
     return (
         <li>
-            <a onClick={()=> onMenu(category)}>
-                {name}
+            <a onClick= {()=> onMenu(category)}>
+                {name} 
             </a>
         </li>
     );

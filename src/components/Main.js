@@ -55,7 +55,6 @@ function textoutChange(){
         <div className="logo_wrap d_display fadeIn wow">
             <h5 className="logo_square "> BOTTLESUN _ Portfolio </h5>
         </div>
-        <div className="left_box d_display"></div>
 
         <div className="container">
             <div className="main_wrap">

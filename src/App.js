@@ -4,7 +4,7 @@ import './utils/css/reset.css';
 import './utils/css/main.css'
 import WOW from 'wowjs';
 import { Portfolio, Footer, Main, Mail,About} from './components';
-import Action_list from './utils/Action_list';
+import ApidataList from './utils/ApidataList';
 
 const App = () => {
 
@@ -15,7 +15,7 @@ const App = () => {
   },[])
 
   return (
-    <Action_list>
+    <ApidataList>
     <div id="wrap">
       <Main />
       <About/>
@@ -23,7 +23,7 @@ const App = () => {
       <Mail/>
       <Footer/>
     </div>
-    </Action_list>
+    </ApidataList>
   );
 };
 
