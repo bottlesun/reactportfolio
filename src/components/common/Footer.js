@@ -32,14 +32,14 @@ const [ScrollY, setScrollY] = useState(0);  // 스크롤값을 저장하기 위�
   });
 
     return (
-        <div class="footer_wrap">
-        <div class="footer_capy">Portfolio_by. <strong>BOTTLESUN</strong></div>
-        <div class="footer">
-            <p class="footer_content">해당 사이트는 상업적 목적이 아닌 개인용 포트폴리오를 위해 제작한 사이트로,<br class="m_display" /> 홈페이지 일부 내용 및 이미지에 대한 저작권이 따로 있음을 밝혀드립니다.
+        <div className="footer_wrap">
+        <div className="footer_capy">Portfolio_by. <strong>BOTTLESUN</strong></div>
+        <div className="footer">
+            <p className="footer_content">해당 사이트는 상업적 목적이 아닌 개인용 포트폴리오를 위해 제작한 사이트로,<br className="m_display" /> 홈페이지 일부 내용 및 이미지에 대한 저작권이 따로 있음을 밝혀드립니다.
             </p>
         </div>
-        <div id="icons" class="icon_top_wrap d_display offdisplay" onClick={ () => window.scrollTo(0,document.body.scrollTop) }>
-            <div class="icon_top"><span>T</span>OP</div>
+        <div id="icons" className="icon_top_wrap d_display offdisplay" onClick={ () => window.scrollTo(0,document.body.scrollTop) }>
+            <div className="icon_top"><span>T</span>OP</div>
         </div>
     </div>
 

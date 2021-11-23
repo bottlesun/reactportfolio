@@ -65,14 +65,14 @@ function textoutChange(){
                 <div className="main_title ani_move">
                     <div className="main_title_circle ani_move">
                         <h2> Web <span id="dynamic" > </span></h2>
-                        <span class="text"></span>
+                        <span className="text"></span>
                     </div>
                     <p className="fadeIn wow">일에 욕심 있는 ADTECH, 퍼블리셔</p>
                 </div>
             </div>
         </div>
        {/**<!--container--> */} 
-        <div class="contact_us fadeInDown wow" onClick={()=>{window.scrollTo(0,document.body.scrollHeight);}}>
+        <div className="contact_us fadeInDown wow" onClick={()=>{window.scrollTo(0,document.body.scrollHeight);}}>
             <div id="context" onMouseOver={textonChange} onMouseOut={textoutChange}>{isAboutMe}</div>
         </div>
         {/**<!--main--> */}

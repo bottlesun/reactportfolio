@@ -10,19 +10,19 @@ const Modal = ({listset,onClose}) => {
  
 
     return (
-<div class="modal_wrap" onClick={()=>{onClose()}}>
-    <div class="modal_item">
-      <div class="close_btn"><VscChromeClose/></div>
-      <div class="img_item"><img src={img} alt={title} /></div>
+<div className="modal_wrap" onClick={()=>{onClose()}}>
+    <div className="modal_item">
+      <div className="close_btn"><VscChromeClose/></div>
+      <div className="img_item"><img src={img} alt={title} /></div>
 
-      <div class="modal_text">
+      <div className="modal_text">
         <h3>{title}</h3>
-        <div class="modal_project">
+        <div className="modal_project">
           <h4>project</h4>
-          <ul class="modal_list">
+          <ul className="modal_list">
             <li>{todey}</li>
             <li>{produce}</li>
-            <li class="modal_skill">
+            <li className="modal_skill">
               <h5>skill</h5>
               <ul>
                 <li>{skill1}</li>
@@ -32,12 +32,12 @@ const Modal = ({listset,onClose}) => {
               </ul>
             </li>
           </ul>
-          <div class="modal_content">
+          <div className="modal_content">
             <h5>portfolio view</h5>
             <p>
              {contents}
             </p>
-            <ul class="modal_btn">
+            <ul className="modal_btn">
               <li><a href={link} target="_blank">홈페이지 보러가기</a></li>
               <li><a href="#">코드리뷰하기</a></li>
               <li><a href="#">계획서 보러가기</a></li>
