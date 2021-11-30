@@ -7,7 +7,7 @@ import {Infocontext} from '../../utils/ApidataList';
 
 const Portfolio = () => {
     const data = useContext(Infocontext);
-
+/* 
     const [menus, setMenus] = useState([
         {category : 'all' , name:'All'},
         {category : 'WEB' , name:'WEB'},
@@ -15,7 +15,7 @@ const Portfolio = () => {
         {category : 'React' , name:'React'},
         {category : 'CMS' , name:'CMS'}
     ]);
-
+*/
     const [list,setList] = useState(data);
 
     const [isActive,setIsActive] = useState(false)
@@ -29,7 +29,7 @@ const Portfolio = () => {
         setIsActive(false)
 
     }
-
+/*
     const onMenu = (category) =>{
         if( category === 'all'){
             setList(data)
@@ -38,7 +38,7 @@ const Portfolio = () => {
         setList(data.filter (item => item.category === category))
         }
     }
-
+*/
     
     
     return (
@@ -49,7 +49,7 @@ const Portfolio = () => {
             </div>
             
             <div className="portfolio">
-            <PortfolioMenu menus={menus} onMenu={onMenu} />
+           {/* <PortfolioMenu menus={menus} onMenu={onMenu} /> */}
             <PortfolioItem list={list}  onClose={onClose} onOpen={onOpen} />
             {
                 isActive && <Modal  listset={listset} list={list} onClose={onClose} onOpen={onOpen} />

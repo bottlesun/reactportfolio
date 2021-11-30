@@ -26,7 +26,7 @@ const ApidataList = (props) => {
             todey:'2021 Y / 01 - 03 D / (3개월)',
             produce:'제작인원 : 1명',
             link:"https://innerpium.com/",
-            hash:"#Web #Cafe24 #Publishing"
+            hash:"#Cafe24 #CMS #Design"
             },
             {
             no:3,title:'타이지엔',
@@ -37,7 +37,7 @@ const ApidataList = (props) => {
             todey:'2021 Y / 05 - 05 D / (2주)',
             produce:'제작인원 : 1명',
             link:"http://bottlesun.pe.kr/taizen/index.html",
-            hash:"#Web #Planning #Publishing"
+            hash:"#Responsive #Landing #Publishing"
             },
             {
             no:4,title:'BottleSun_Portfolio',
@@ -48,7 +48,7 @@ const ApidataList = (props) => {
             todey:'2021 Y / 11 - 12 D / (1개월)',
             produce:'제작인원 : 1명',
             link:"http://bottlesun.pe.kr/",
-            hash:"#Web #React #Publishing"
+            hash:"#React #Portfolio #Publishing"
             },
     ]
 
