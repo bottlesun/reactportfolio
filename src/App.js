@@ -4,7 +4,7 @@ import './utils/css/reset.css';
 import './utils/css/main.css'
 import WOW from 'wowjs';
 import { Portfolio, Footer, Main, Mail,About} from './components';
-import ApidataList from './utils/ApidataList';
+import ApidataList from './utils/Context/ApidataList';
 
 const App = () => {
 

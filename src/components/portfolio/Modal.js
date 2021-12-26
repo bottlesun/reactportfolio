@@ -38,9 +38,8 @@ const Modal = ({listset,onClose}) => {
              {contents}
             </p>
             <ul className="modal_btn">
-              <li><a href={link} target="_blank">홈페이지 보러가기</a></li>
-              <li><a href="#">코드리뷰하기</a></li>
-              <li><a href="#">계획서 보러가기</a></li>
+              <li><a href={link} target="_blank">사이트 보러가기</a></li>
+              <li><a href="#">코드 리뷰하기</a></li>
             </ul>
           </div>
         </div>

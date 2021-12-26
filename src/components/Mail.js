@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import '../utils/css/mail_form.css'
+import { AiFillGithub } from "react-icons/ai";
+import { FaBlogger } from "react-icons/fa";
 
+const Linkdata = {
+    gitLink : 'https://github.com/bottlesun',
+    blogLink : `https://velog.io/@bottlesun/series`,
+}
 
 const Mail = () => {
+    const [Link , setLink] = useState(Linkdata);
+    const {gitLink , blogLink} = Link
 
     function sendEmail(e) {
         e.preventDefault();
@@ -40,6 +48,12 @@ const Mail = () => {
             <input type="submit" value="관심표현하기" />
         </form>
 
+        <div class="link_wrap">
+            <ul>
+                <li> <a href={gitLink} target="_blank" ><AiFillGithub/> </a></li>
+                <li> <a href={blogLink}  target="_blank" ><FaBlogger/> </a> </li>
+            </ul>
+        </div>
     </div>
     );
 };
