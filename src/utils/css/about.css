@@ -1,27 +1,32 @@
+@charset "utf-8";
+
 
 /*about start*/
-.about_wrap{width:100%;min-height:650px;height:100%;margin-bottom:50px;}
-.about_title{font-size:60px;position: relative;width:200px;margin-left:20px;margin-bottom:30px;margin-top:50px}
-.about_title::before{content: ' ';position: absolute;width:20px;height:20px;background-color:#6264a2;z-index: -1;right:0;border-radius: 30px;}
-.about_title::after{content: ' ';position: absolute;width:15px;height:15px;background-color:#fff;z-index: -1;right:-5px;top:-5px;border-radius: 30px;}
+.about_wrap{width:100%;min-height:800px;height:100%;padding-bottom:50px;background-color:#dcd7cd;padding-top:50px;position: relative;z-index: 2;}
+.about_wrap::after{position: absolute;content: "";width:100%;height:100%;
+background:url('http://bottlesun.pe.kr/img/cloud.svg')no-repeat;background-position: bottom;bottom: -30%;z-index: 1;}
 
-.about{width:100%;text-align: center;height:100%;display:flex;}
+.about_title{font-size:60px;position: relative;width:200px;margin:30px auto 0;}
+.about_title::before{content: ' ';position: absolute;width:20px;height:20px;background-color:#6264a2;right:0;border-radius: 30px;}
+.about_title::after{content: ' ';position: absolute;width:15px;height:15px;background-color:#fff;right:-5px;top:-5px;border-radius: 30px;}
+
+.about{width:100%;text-align: center;height:100%;position: relative;z-index: 100;}
 
 /*info*/
-.left_about{width:100%;height:100%;display: flex;flex-basis: auto;}
+.info_about{width:100%;height:100%;}
 
-.info_box{width:100%;height:100%;margin:50px 50px 0 50px;text-align: left;flex-basis: 70%}
-.info_box img{width:400px;height:400px;}
+.info_box{width:100%;height:100%;margin:50px auto;}
+.info_box img{width:200px;height:200px;border-radius:100px;}
 
-.info_text{width:100%;margin-top:30px;text-align: left;}
-.info_text h3{font-size:30px;margin-top:15px;position: relative;width:180px;}
+.info_text{width:100%;margin-top:30px;}
+.info_text h3{font-size:30px;position: relative;width:180px;margin:15px auto 0}
 .info_text h3::before{content: " ";position: absolute;width:10px;height:10px;background-color: #6264a2;border-radius: 30px;right:0;}
 .info_text ul{margin-top:30px}
 .info_text ul li{margin-top:20px;font-size:17px; font-family: "S-CoreDream-4", sans-serif;letter-spacing: -1px;}
 .info_text ul li b{font-size:18px}
 
-.info_crareer{margin-top:20px}
-.info_crareer h4{font-size:22px;width:83px;position: relative;}
+.info_crareer{margin-top:20px;}
+.info_crareer h4{font-size:22px;width:83px;position: relative;margin:0 auto;}
 .info_crareer h4::before{content: " ";position: absolute;width:10px;height:10px;background-color: #6264a2;border-radius: 30px;right:0;}
 .info_crareer ul{margin-top:15px;}
 .info_crareer ul li{margin-top:10px;font-size:15px }
@@ -29,16 +34,16 @@
 .career_title h5{font-size:16px;}
 .career_title h5 span{font-size:14px;color:#949597;}
 .career_list li{margin-top:5px!important;position: relative;margin-left:10px;font-size:14px!important;}
-.career_list li::before{width:8px;height:8px;background-color: #6264a2;content: " ";position: absolute;
-left:-13px;border-radius: 50px;top:2px;}
 
 
 
-.info_skil h4{font-size:22px;width:50px;position: relative;}
-.info_skil h4::before{content: " ";position: absolute;width:10px;height:10px;background-color: #6264a2;border-radius: 30px;right:0;}
-.info_skil ul{ display:flex;flex-wrap: wrap;margin-top:15px;}
+.info_skil{margin-top:30px}
+.info_skil h4{font-size:22px;width:50px;position: relative;margin:0 auto}
+.info_skil h4::before{content: " ";position: absolute;width:10px;height:10px;background-color: #6264a2;border-radius: 30px;right:-5px;}
+.info_skil ul{ display:flex;margin-top:15px;justify-content: center;}
 .info_skil ul li{margin-right:20px;position: relative;margin-bottom:5px;margin-top:0;font-size:14px;
 font-family: "S-CoreDream-4", sans-serif;letter-spacing: -1px;}
+.info_skil ul li:last-child{margin-right:0}
 .info_skil ul li::before{content: " ";position: absolute;width:4px;height:4px;border-radius: 30px;background-color: #d1b0be;
 top:50%;right:-13px;transform: translate(0,-50%);}
 .info_skil ul li:last-child:before{content: " ";display:none;}
@@ -46,8 +51,8 @@ top:50%;right:-13px;transform: translate(0,-50%);}
 
 
 /*이력서보기*/
-.right_about{width:100%;height:100%;font-family: "S-CoreDream-4", sans-serif;flex-basis: 80%;}
-.about_text{margin-top:130px;}
+.pr_about{width:100%;height:100%;font-family: "S-CoreDream-4", sans-serif;}
+.about_text{margin-top:100px;}
 .about_text h2{font-size:25px;margin-bottom:10px;}
 .about_text .about_keypoint{color:#d1b0be;letter-spacing: -1px;font-size:15px;}
 .about_text div{font-size:16px;font-weight:600;margin-bottom:25px;}
@@ -70,12 +75,11 @@ top:13px;left:50%;transform: translate(-50%,0);padding:0 2px;animation: point_ye
 .resume:hover::after{background-color: #6264a2;}
 
 @media (max-width:991px){
-.about{flex-wrap: wrap;}
+.about_wrap::after{bottom:-5%}
 .info_box{margin:0 auto;text-align: center;}
 .info_box img{width:400px;height:auto;margin:0 auto}
 .left_about{flex-wrap: wrap;}
 .border_line{width:95%;}
-.info_text{margin-left:30px}
 .right_about{flex-basis: 100%;}
     }
 @media (max-width:766px){

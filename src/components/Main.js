@@ -38,6 +38,8 @@ const Main = () => {
 
     },[])
 
+
+
 /* 글자 마우스 오버 시 변경  */
 function textonChange(){
      setIsAboutMe('Contact Me!')
@@ -51,14 +53,13 @@ function textoutChange(){
 
     return (
         <div id="main">
-        <div className="logo_main"> <img src="img/main_logo.png" alt="" /></div>
+        <div className="logo_main"> <img src="img/logo_img.png" alt="" /></div>
         <div className="logo_wrap d_display fadeIn wow">
             <h5 className="logo_square "> BOTTLESUN _ Portfolio </h5>
         </div>
 
         <div className="container">
             <div className="main_wrap">
-                <div className="weight_box"></div>
                 <div className="square_wrap">
                     <div className="square ani_move"></div>
                 </div>

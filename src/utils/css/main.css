@@ -3,6 +3,7 @@
 @import url("font.css");
 @import url('portfolio.css');
 @import url('about.css');
+@import url('keyframes.css');
 
 
 
@@ -40,48 +41,6 @@ body ,a{
 .m_display{display:block;}
 }
 
-/* 애니메이션 키프레임*/
-@keyframes fadeIn {
-    0% { opacity: 0;}
-    100% { opacity: 1;}
-}
-
-@keyframes fadeOut {
-    0% { opacity: 1;}
-    100% { opacity: 0;}
-}
-
-@keyframes mainbeforeFadeIn {
-    0% {opacity: 0; top:-30px;right:-35px;}
-    100% {opacity: 1;top:-35px;right:-40px}
-}
-
-@keyframes rotate_yellow {
-    0% { opacity: 0;transform: rotateZ(-50deg);left:-160px;top:-100px}
-    100% { opacity: 1;transform: rotateZ(0)}
-}
-
-@keyframes rotate_gray {
-    0% { opacity: 0;transform: rotateZ(50deg);right:-160px;bottom:-100px}
-    100% { opacity: 1;transform: rotateZ(0);}
-}
-
-@keyframes itemtop_FadeIn {
-    0% {opacity: 0;width:10%;height:20px;}
-    100% {opacity: 1;width:30%;height:80px;}
-}
-
-@keyframes itembottom_FadeIn {
-    0% {opacity: 0;width:10%;height:20px;}
-    100% {opacity: 1;width:30%;height:80px;}
-}
-
-@keyframes point_yellow {
-    0% {width:0%;left:0}
-    100% {width:100%;}
-}
-
-
 
 
 
@@ -96,43 +55,37 @@ body{cursor: default;}
 
 
 /*main start*/
-#main{position: relative;width:100%;max-height:960px;height:100vh;overflow: hidden;}
+#main{position: relative;width:100%;max-height:960px;height:100vh;overflow: hidden;background-color:#6264a2;}
+#main::before{position:absolute;content: ' ';background:url('http://bottlesun.pe.kr/img/moonstar.svg')no-repeat;
+background-position:center 50px;width:100%;height:100%;animation: mainbeforeFadeIn 1.2s;}
+#main::after{position: absolute;content:' ';background: url('http://bottlesun.pe.kr/img/city.svg')no-repeat;
+width:100%;height:100%;background-position:bottom;bottom:-2%;z-index: 101;}
 .main_wrap {width:100%;margin:0 auto;text-align: center;}
-
-/*square_wrap*/
-.square_wrap{position: absolute;top:50%;left:50%;transform: translate(-49%,-49%);}
-.square{width:250px;height:300px;position: relative;}
-.square::before{border:10px solid #6264a2;background-color: #fff;position: absolute;width:100%;height:100%;top:-40px;left:-80px;content: " ";z-index: -1; animation: rotate_yellow 0.6s;}
-.square::after{border:10px solid #d1b0be;position: absolute;width:100%;height:100%;bottom:-40px;right:-80px;content: " ";z-index: -5; animation: rotate_gray 0.8s;}
 
 /*web publisher*/
 .main_title{position: absolute;top:50%;left:50%;transform: translate(-49%,-49%);}
-.main_title_circle {font-size:50px;margin-bottom:12px;width:100%;height:100%;position: relative;margin-bottom:12px;font-size:40px;font-weight:bold;}
-.main_title_circle::before {content: " ";width:30px;height:30px;background-color:#6264a2;position: absolute;top:-35px;right:-40px;z-index: -1;border-radius: 30px;animation: mainbeforeFadeIn 0.8s;}
-.main_title_circle::after {content: " ";width:10px;height:10px;background-color:#d1b0be;position: absolute;top:-5px;right:-10px;z-index: -1;border-radius: 30px;animation: fadeIn 0.4s;}
-.main_title p {font-size:14px;letter-spacing:2px;color:#949597;  }
+.main_title_circle {font-size:50px;margin-bottom:12px;width:100%;height:100%;position: relative;margin-bottom:12px;font-size:40px;font-weight:bold;color:#fff}
+.main_title_circle::after {content: " ";width:90px;height:100%;background:url('http://bottlesun.pe.kr/img/airplane.svg') no-repeat;
+position: absolute;top:-5px;right:-10px;z-index: -1;border-radius: 30px;animation: fadeIn 0.4s;background-position: center;background-size: 100%;right:-100px;top:5%}
+.main_title p {font-size:14px;letter-spacing:2px;color:#fff;  }
 
 /*logo*/
-.logo_main{width:120px;position: absolute;bottom:50px;right:50px;opacity: 0.6;}
+.logo_main{width:120px;position: absolute;bottom:50px;right:50px;opacity: 0.6;z-index: 999;}
 .logo_main img{width:100%;}
-.logo_wrap {position:fixed;top:170px;right:-90px;width:260px;text-align: center;transform: rotate( 90deg );z-index: -1;}
-.logo_square{position: relative;font-size:20px;width:100%;color:#333;font-weight:400}
+.logo_wrap {position:fixed;top:170px;right:-90px;width:260px;text-align: center;transform: rotate( 90deg );z-index: 100;}
+.logo_square{position: relative;font-size:20px;width:100%;color:#fff;font-weight:400}
 .logo_square::before{background: #6264a2;position: absolute;width:20px;height:20px;top:-5px;left:-20px;content: " ";z-index: -1; }
 .logo_square::after{background: #d1b0be;position: absolute;width:20px;height:20px;top:5px;left:-10px;content: " ";z-index: -5; }
-
-/*box*/
-.left_box{position:fixed;top:0;left:0;width:10px;height:100%;text-align: center;background: #6264a2;z-index: -1;}
-.weight_box{position:absolute;top:0;left:0;width:35px;height:100%;text-align: center;background: #fff;z-index: 10;}
 
 
 
 /*contact_us btn*/
-.contact_us{width:150px;text-align: center;font-size:22px;font-weight: 500;position: absolute;bottom:20px;left:40px;height:50px;cursor: pointer;transition: 0.5s}
-.contact_us a{color:#333;letter-spacing: 1px;}
+.contact_us{width:150px;text-align: center;font-size:22px;font-weight: 500;position: absolute;top:50px;left:40px;height:50px;
+cursor: pointer;transition: 0.5s;z-index: 999;color:#fff;}
 
 
     @media (max-width:766px){
-    #main{height:800px}
+    #main{height:650px}
     .square{width:150px;height:200px;}
     .contact_us{left:0;z-index: 100;font-size:18px;}
     .logo_main{right:10px;width:80px;}

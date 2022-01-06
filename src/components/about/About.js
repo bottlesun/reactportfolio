@@ -10,7 +10,7 @@ const About = () => {
         </div>
 
         <div className="about">
-            <div className="left_about">
+            <div className="info_about">
                 <div className="info_box"><img className="img_box_item" src="http://bottlesun.pe.kr/img/my_img.jpg" alt="" /></div>
                 <div className="info_text">
                     <h3>Information</h3>
@@ -19,7 +19,6 @@ const About = () => {
                         <li><b>생년월일 : </b>1996. 08. 09</li>
                         <li><b>이메일 : </b>krr1996@naver.com</li>
                     </ul>
-                    <hr className="border_line" />
 
                     <div className="info_skil">
                         <h4>Skil</h4>
@@ -58,7 +57,7 @@ const About = () => {
             </div>
 
 
-            <div className="right_about">
+            <div className="pr_about">
                 <div className="about_text">
                     <h2>"배움에 욕심이 있는 개발자입니다."</h2>
                     <div className="about_keypoint">저는 발전하는게 좋습니다. 지금에 안주하거나 멈추고 싶지 않습니다.</div>

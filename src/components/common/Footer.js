@@ -11,16 +11,19 @@ const [ScrollY, setScrollY] = useState(0);  // 스크롤값을 저장하기 위�
     const watch = () => {
       window.addEventListener('scroll', handleFollow);
       let icon = document.getElementById('icons');
+      let name_logo = document.querySelector('.logo_square');
        
        //위치에따른 이벤트 주기
-       if(ScrollY <= 100){
+       if(ScrollY <= 650){
    
            icon.classList.add('offdisplay');
            icon.classList.remove('ondisplay');
+           name_logo.style.color = `#fff`;
    
        } else{
            icon.classList.add('ondisplay');
            icon.classList.remove('offdisplay');
+           name_logo.style.color = `#333`;
        }
        
     }

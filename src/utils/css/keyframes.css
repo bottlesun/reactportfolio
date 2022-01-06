@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/* 애니메이션 키프레임*/
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1;}
+    100% { opacity: 0;}
+}
+
+@keyframes mainbeforeFadeIn {
+    0% {opacity: 0; top:-30px;right:-35px;}
+    100% {opacity: 1;top:0;right:0}
+}
+
+@keyframes rotate_yellow {
+    0% { opacity: 0;transform: rotateZ(-50deg);left:-160px;top:-100px}
+    100% { opacity: 1;transform: rotateZ(0)}
+}
+
+@keyframes rotate_gray {
+    0% { opacity: 0;transform: rotateZ(50deg);right:-160px;bottom:-100px}
+    100% { opacity: 1;transform: rotateZ(0);}
+}
+
+@keyframes itemtop_FadeIn {
+    0% {opacity: 0;width:10%;height:20px;}
+    100% {opacity: 1;width:30%;height:80px;}
+}
+
+@keyframes itembottom_FadeIn {
+    0% {opacity: 0;width:10%;height:20px;}
+    100% {opacity: 1;width:30%;height:80px;}
+}
+
+@keyframes point_yellow {
+    0% {width:0%;left:0}
+    100% {width:100%;}
+}
+
