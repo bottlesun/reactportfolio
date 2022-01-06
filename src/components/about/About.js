@@ -62,9 +62,9 @@ const About = () => {
                     <h2>"배움에 욕심이 있는 개발자입니다."</h2>
                     <div className="about_keypoint">저는 발전하는게 좋습니다. 지금에 안주하거나 멈추고 싶지 않습니다.</div>
                     <div className="about_key_wrap">
-                        <p className="about_keyword wow fadeIn" data-wow-delay="0.1s" ><span>#</span>나아감</p>
-                        <p className="about_keyword wow fadeIn" data-wow-delay="0.3s" ><span>#</span>발전</p>
-                        <p className="about_keyword wow fadeIn" data-wow-delay="0.5s" ><span>#</span>도전</p>
+                        <p className="about_keyword wow fadeIn" data-wow-delay="0.1s"><span>#</span>나아감</p>
+                        <p className="about_keyword wow fadeIn" data-wow-delay="0.3s"><span>#</span>발전</p>
+                        <p className="about_keyword wow fadeIn" data-wow-delay="0.5s"><span>#</span>도전</p>
                     </div>
                     <div className="about_txt">
                         <h3> 나아감 · 발전 · 도전이라는 단어를 좋아합니다.</h3>
@@ -78,7 +78,6 @@ const About = () => {
                     </div>
                     <div className="resume"><a href="#">이력서 보러가기</a></div>
                 </div>
-
 
             </div>
 

@@ -1,7 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import '../../utils/css/footer.css'
+import { AiFillGithub } from "react-icons/ai";
+import { FaBlogger } from "react-icons/fa";
+
+
+const Linkdata = {
+  gitLink : 'https://github.com/bottlesun',
+  blogLink : `https://velog.io/@bottlesun/series`,
+}
 
 const Footer = () => {
+  const [Link , setLink] = useState(Linkdata);
+  const {gitLink , blogLink} = Link
 const [ScrollY, setScrollY] = useState(0);  // 스크롤값을 저장하기 위한 상태
   const handleFollow = () => {
     setScrollY(window.pageYOffset); // window 스크롤 값을 ScrollY에 저장
@@ -36,6 +46,12 @@ const [ScrollY, setScrollY] = useState(0);  // 스크롤값을 저장하기 위�
 
     return (
         <div className="footer_wrap">
+            <div class="link_wrap">
+            <ul>
+                <li> <a href={gitLink} target="_blank" ><AiFillGithub/> </a></li>
+                <li> <a href={blogLink}  target="_blank" ><FaBlogger/> </a> </li>
+            </ul>
+        </div>
         <div className="footer_capy">Portfolio_by. <strong>BOTTLESUN</strong></div>
         <div className="footer">
             <p className="footer_content">해당 사이트는 상업적 목적이 아닌 개인용 포트폴리오를 위해 제작한 사이트로,<br className="m_display" /> 홈페이지 일부 내용 및 이미지에 대한 저작권이 따로 있음을 밝혀드립니다.

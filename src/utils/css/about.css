@@ -2,13 +2,16 @@
 
 
 /*about start*/
-.about_wrap{width:100%;min-height:800px;height:100%;padding-bottom:50px;background-color:#dcd7cd;padding-top:50px;position: relative;z-index: 2;}
-.about_wrap::after{position: absolute;content: "";width:100%;height:100%;
-background:url('http://bottlesun.pe.kr/img/cloud.svg')no-repeat;background-position: bottom;bottom: -30%;z-index: 1;}
+.about_wrap{width:100%;min-height:800px;height:100%;background-color:#dcd7cd;padding-top:50px;padding-bottom:35%;position: relative;z-index: 3;}
+.about_wrap::before{position: absolute;content: "";width:100%;height:100%;
+background:url('http://bottlesun.pe.kr/img/cloud.svg')no-repeat;background-position: bottom;bottom: 0;z-index: 1;}
+
+.about_wrap::after{content: "";width:100%;height:350px;background-color: #332d57;z-index: 0;;position: absolute;bottom: 0;}
+
 
 .about_title{font-size:60px;position: relative;width:200px;margin:30px auto 0;}
 .about_title::before{content: ' ';position: absolute;width:20px;height:20px;background-color:#6264a2;right:0;border-radius: 30px;}
-.about_title::after{content: ' ';position: absolute;width:15px;height:15px;background-color:#fff;right:-5px;top:-5px;border-radius: 30px;}
+.about_title::after{content: ' ';position: absolute;width:15px;height:15px;background-color:#dcd7cd;right:-5px;top:-5px;border-radius: 30px;}
 
 .about{width:100%;text-align: center;height:100%;position: relative;z-index: 100;}
 
@@ -54,34 +57,40 @@ top:50%;right:-13px;transform: translate(0,-50%);}
 .pr_about{width:100%;height:100%;font-family: "S-CoreDream-4", sans-serif;}
 .about_text{margin-top:100px;}
 .about_text h2{font-size:25px;margin-bottom:10px;}
-.about_text .about_keypoint{color:#d1b0be;letter-spacing: -1px;font-size:15px;}
-.about_text div{font-size:16px;font-weight:600;margin-bottom:25px;}
+.about_text .about_keypoint{color:#6264a2;letter-spacing: -1px;font-size:15px;}
+.about_text div{font-size:16px;font-weight:600;}
 .about_key_wrap{display:flex;text-align:center;justify-content: center;align-items: center;}
 .about_keyword{margin:0 10px;font-weight:bold;font-size:18px;position: relative;}
 .about_keyword::before{position: absolute;content: " ";z-index: -1;width:100%;height:10px;background-color: #d1b0be;
-top:13px;left:50%;transform: translate(-50%,0);padding:0 2px;animation: point_yellow 1s}
+top:13px;left:50%;transform: translate(-50%,0);padding:0 2px;animation: point_yellow 1s;}
 
 .about_keyword span{margin-right:2px;font-size:22px;}
-.about_txt{ display: flex;flex-wrap: wrap;flex-direction: column; align-items: center;justify-content: center;}
-.about_txt h3{color:#333;font-size:20px;margin-bottom:30px;}
-.about_txt p{text-align: center;line-height: 20px;font-size:14px;font-weight:600}
+.about_txt{display: flex;flex-wrap: wrap;flex-direction: column; align-items: center;justify-content: center;}
+.about_txt h3{color:#333;font-size:20px;margin-bottom:30px;position: relative;}
+.about_txt h3::before{content: '';background-color:#d1b0be;width:100%;height: 16px;position: absolute;z-index: -1;bottom: -2px;}
+.about_txt p{text-align: center;line-height: 20px;font-size:14px;font-weight:600;}
 
 .resume{width:150px;height:35px;margin:60px auto 0;line-height: 35px;position: relative;background-color: #fff;letter-spacing: -1px;font-weight: bold;}
 .resume a{display:block;}
-.resume a{display:block;font-size:15px}
+.resume a{display:block;font-size:15px;}
 .resume::before{position: absolute;content: " ";width:150px;height:35px;z-index: -1;background-color: #6264a2;top:-3px;left:-3px;transition:0.4s}
 .resume::after{position: absolute;content: " ";width:150px;height:35px;z-index: -1;background-color: #d1b0be;bottom:-3px;right:-3px}
 .resume:hover::before{background-color: #d1b0be;}
 .resume:hover::after{background-color: #6264a2;}
 
+
 @media (max-width:991px){
-.about_wrap::after{bottom:-5%}
-.info_box{margin:0 auto;text-align: center;}
-.info_box img{width:400px;height:auto;margin:0 auto}
-.left_about{flex-wrap: wrap;}
-.border_line{width:95%;}
-.right_about{flex-basis: 100%;}
+    .about_wrap{padding-bottom:300px;}
+    .about_wrap::after{height:50px}
+    .about_txt h3{margin-top:10px}
+    .about_txt h3::before{content: none;}
+    .info_box{margin:0 auto;text-align: center;}
+    .info_box img{width:400px;height:auto;margin:0 auto}
+    .left_about{flex-wrap: wrap;}
+    .border_line{width:95%;}
+    .right_about{flex-basis: 100%;}
     }
+
 @media (max-width:766px){
     .about{width:95%;margin:0 auto;}
     .info_box{margin:0 auto;}

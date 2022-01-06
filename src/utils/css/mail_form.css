@@ -4,10 +4,13 @@
 
 
 /*contact start*/
-.contact_wrap{width:100%;min-height:600px;height:100%;padding-bottom:50px;position: relative;padding-top:100px;}
+.contact_wrap{width:100%;min-height:600px;height:100%;padding-bottom:200px;position: relative;padding-top:100px;background-color:#dddbdb;z-index: 1;}
+.contact_wrap::after{position: absolute;content: "";width:100%;height:100%;
+    background:url('http://bottlesun.pe.kr/img/mountain.svg')no-repeat;background-position: bottom;bottom:0;z-index: -2;}
+
 .contact_title{font-size:60px;position: relative;width:250px;margin-left:auto;margin-right:auto;margin-bottom:30px}
-.contact_title::before{content: ' ';position: absolute;width:20px;height:20px;background-color:#6264a2;z-index: -1;right:0;border-radius: 30px;}
-.contact_title::after{content: ' ';position: absolute;width:15px;height:15px;background-color:#fff;z-index: -1;right:-5px;top:-5px;border-radius: 30px;}
+.contact_title::before{content: ' ';position: absolute;width:20px;height:20px;background-color:#6264a2;right:0;border-radius: 30px;}
+.contact_title::after{content: ' ';position: absolute;width:15px;height:15px;background-color:#dddbdb;right:-5px;top:-5px;border-radius: 30px;}
 
 
 .contact-form{width:400px;height:450px;margin:0 auto;padding:20px;margin-top:80px;position: relative;background-color: #fff;}
@@ -38,14 +41,4 @@ textarea:focus {outline:none;}
 
 
 /*contact end*/
-
-/*link start*/
-.link_wrap{width:100%;min-height:100px;height:100%;position: relative;padding-top:100px;text-align: center;font-size:35px;}
-.link_wrap ul{display:flex;justify-content: center;}
-.link_wrap ul li{width:50px;margin-left:30px;}
-.link_wrap ul li:first-child{margin-left:0;}
-.link_wrap ul li:nth-child(2) a{color:#1fc392}
-
-.link_wrap ul li a{width: 100%;height:100%;;display: block;transition: .4s;}
-.link_wrap ul li:hover a{color:#6264a2;}
 
