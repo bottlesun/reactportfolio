@@ -20,8 +20,8 @@ const About = () => {
                         <li><b>이메일 : </b>krr1996@naver.com</li>
                     </ul>
 
-                    <div className="info_skil">
-                        <h4>Skil</h4>
+                    <div className="info_skill">
+                        <h4>Skill</h4>
                         <ul>
                             <li>HTML5</li>
                             <li>CSS3</li>

@@ -40,16 +40,16 @@ background:url('http://bottlesun.pe.kr/img/cloud.svg')no-repeat;background-posit
 
 
 
-.info_skil{margin-top:30px}
-.info_skil h4{font-size:22px;width:50px;position: relative;margin:0 auto}
-.info_skil h4::before{content: " ";position: absolute;width:10px;height:10px;background-color: #6264a2;border-radius: 30px;right:-5px;}
-.info_skil ul{ display:flex;margin-top:15px;justify-content: center;}
-.info_skil ul li{margin-right:20px;position: relative;margin-bottom:5px;margin-top:0;font-size:14px;
+.info_skill{margin-top:30px}
+.info_skill h4{font-size:22px;width:50px;position: relative;margin:0 auto}
+.info_skill h4::before{content: " ";position: absolute;width:10px;height:10px;background-color: #6264a2;border-radius: 30px;right:-5px;}
+.info_skill ul{ display:flex;margin-top:15px;justify-content: center;}
+.info_skill ul li{margin-right:20px;position: relative;margin-bottom:5px;margin-top:0;font-size:14px;
 font-family: "S-CoreDream-4", sans-serif;letter-spacing: -1px;}
-.info_skil ul li:last-child{margin-right:0}
-.info_skil ul li::before{content: " ";position: absolute;width:4px;height:4px;border-radius: 30px;background-color: #d1b0be;
+.info_skill ul li:last-child{margin-right:0}
+.info_skill ul li::before{content: " ";position: absolute;width:4px;height:4px;border-radius: 30px;background-color: #d1b0be;
 top:50%;right:-13px;transform: translate(0,-50%);}
-.info_skil ul li:last-child:before{content: " ";display:none;}
+.info_skill ul li:last-child:before{content: " ";display:none;}
 
 
 
@@ -57,9 +57,9 @@ top:50%;right:-13px;transform: translate(0,-50%);}
 .pr_about{width:100%;height:100%;font-family: "S-CoreDream-4", sans-serif;}
 .about_text{margin-top:100px;}
 .about_text h2{font-size:25px;margin-bottom:10px;}
-.about_text .about_keypoint{color:#6264a2;letter-spacing: -1px;font-size:15px;}
+.about_text .about_keypoint{color:#6264a2;letter-spacing: -1px;font-size:15px;margin:15px 0;}
 .about_text div{font-size:16px;font-weight:600;}
-.about_key_wrap{display:flex;text-align:center;justify-content: center;align-items: center;}
+.about_key_wrap{display:flex;text-align:center;justify-content: center;align-items: center;margin:0 0 15px;}
 .about_keyword{margin:0 10px;font-weight:bold;font-size:18px;position: relative;}
 .about_keyword::before{position: absolute;content: " ";z-index: -1;width:100%;height:10px;background-color: #d1b0be;
 top:13px;left:50%;transform: translate(-50%,0);padding:0 2px;animation: point_yellow 1s;}
